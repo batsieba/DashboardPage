@@ -10,3 +10,4 @@ let orders = [
     { productName: "Mouse", productNumber: "PRD009", paymentStatus: "paid", shipping: "delivered" },
     { productName: "External Hard Drive", productNumber: "PRD010", paymentStatus: "refunded", shipping: "declined" }
 ];
+

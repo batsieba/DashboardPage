@@ -35,3 +35,22 @@ orders.forEach(order =>{
     tr.innerHTML = trContent;
     document.querySelector('table tbody').appendChild(tr);
 })
+
+var totalSales, totalIncome, totalExpense = 0;
+
+const totsales = document.getElementById("totSales");
+// totSales.innerHTML = "$"+500;
+// console.log(totsales);
+const expenses = document.getElementById("totExpenses");
+const incomes = document.getElementById("totIncome");
+
+salesy.forEach(sale =>{
+totalSales += sale.sales;
+totalExpense += sale.expense;
+totalIncome += sale.income;
+});
+console.log(totalSales);
+totsales.innerHTML = "$" + totalSales;
+expenses.innerHTML = "$" + totalExpense;
+incomes.innerHTML = "$" + totalIncome;
+
